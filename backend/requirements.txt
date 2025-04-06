@@ -13,3 +13,4 @@ python-jose
 chromadb
 pymupdf
 python-multipart
+langchain_chroma

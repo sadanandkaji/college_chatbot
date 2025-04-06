@@ -1,26 +1,35 @@
-import React, { useState } from "react";
-import { BrowserRouter ,Routes, Route  } from "react-router-dom";
-import RegisterComponent from "./components/Registercomponent";
-import LoginComponent from "./components/logincomponent";
-import ChatComponent from "./components/chatcomponent";
-import UploadComponent from "./components/uploadcomponent";
+
+import './App.css'
+import { BrowserRouter,Route,Routes } from "react-router-dom"
+import RegisterComponent from './components/Registercomponent'
+import LoginComponent from './components/logincomponent'
+import ChatComponent from './components/chatcomponent'
+import UploadComponent from './components/uploadcomponent'
+import LandingPage from "./components/Landingpage";
+
+
+
+
 
 
 function App() {
+  
 
-  return (
-    <div>
-      <BrowserRouter>
-      <Routes>
-        <Route path="/register" element={<RegisterComponent></RegisterComponent>} ></Route>
-        <Route path="/login" element={<LoginComponent></LoginComponent>} ></Route>
-        <Route path="/chat" element={<ChatComponent></ChatComponent>} ></Route>
-        <Route path="/upload" element={<UploadComponent></UploadComponent>} ></Route>
-      </Routes>
-      </BrowserRouter>
-    </div>
-
-  );
+  return <>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/register" element={<RegisterComponent></RegisterComponent> } />
+      <Route path="/login" element={<LoginComponent ></LoginComponent> } />
+      <Route path="/chat" element={<ChatComponent></ChatComponent>} />
+      <Route path="/upload" element={<UploadComponent></UploadComponent> } />
+      <Route path="/" element={<LandingPage />} />
+      
+     
+   
+    </Routes>
+  </BrowserRouter>
+  </>
+  
 }
 
-export default App;
+export default App

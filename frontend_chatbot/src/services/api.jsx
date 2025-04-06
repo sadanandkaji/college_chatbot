@@ -36,6 +36,11 @@ export const chatWithBot = async (query) => {
     );
     return response.data;
   };
+
+  export const getAllMessages = async () => {
+    const response = await axios.get(`${API_URL}/chat/messages`);
+    return response.data;
+  };
   
   
   

@@ -23,7 +23,7 @@ env/
 secrets.json
 
 # Ignore database configuration (if credentials are hardcoded)
-alembic.ini
+
 
 # Ignore alembic migration cache
 alembic/versions/__pycache__/

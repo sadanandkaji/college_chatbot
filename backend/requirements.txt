@@ -1,0 +1,15 @@
+sqlalchemy[asyncio] 
+asyncpg
+pydantic
+fastapi
+uvicorn
+python-dotenv
+alembic
+langchain
+langchain_huggingface
+langchain_community
+passlib[bcrypt]
+python-jose
+chromadb
+pymupdf
+python-multipart
